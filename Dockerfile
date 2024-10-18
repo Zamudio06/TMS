@@ -9,6 +9,8 @@ WORKDIR /usr/src/app
 # Copiar los archivos de requerimientos
 COPY requirements.txt ./
 
+RUN pip install --upgrade pip
+
 # Instalar las dependencias
 RUN pip install --no-cache-dir -r requirements.txt
 
