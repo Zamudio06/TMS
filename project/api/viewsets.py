@@ -1,7 +1,7 @@
 from rest_framework import status, viewsets
 
 from api.serializers import TaskSerializer
-from task_management.models import Task
+from project.task_management.models import Task
 from rest_framework.permissions import AllowAny
 
 

@@ -3,7 +3,7 @@ from django.apps import AppConfig
 
 class TaskManagementConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'task_management'
+    name = 'project.task_management'
 
     def ready(self):
-        import task_management.signals
+        import project.task_management.signals
