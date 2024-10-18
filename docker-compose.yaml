@@ -17,7 +17,7 @@ services:
     volumes:
       - .:/usr/src/app
     ports:
-      - "8000:8000"
+      - "8000:80"
     expose:
       - "8000"  # Exponer el puerto para Nginx
     depends_on:
