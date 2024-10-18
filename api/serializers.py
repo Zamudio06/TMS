@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from project.task_management.models import Task
+from task_management.models import Task
 
 class TaskSerializer(serializers.ModelSerializer):
     class Meta:

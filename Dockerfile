@@ -39,4 +39,4 @@ ENV DB_PORT=${DB_PORT}
 EXPOSE 8000
 
 # Comando por defecto para ejecutar la aplicación usando gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "project.TMS.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "TMS.wsgi:application"]
