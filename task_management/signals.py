@@ -13,4 +13,4 @@ def send_task_email(sender, instance, created, **kwargs):
         message = f'Task "{instance.title}" has been updated successfully.'
 
     # Enviar correo de manera asíncrona usando Celery
-    send_task_notification_email.delay(subject, message, instance.email)
+    send_task_notification_email(subject, message, instance.email)
