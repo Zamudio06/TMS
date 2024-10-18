@@ -1,7 +1,7 @@
 # Dockerfile
 
 # Usamos una imagen oficial de Python 3
-FROM python:3.9-slim
+FROM python:3.7-slim
 
 # Establecer el directorio de trabajo en el contenedor
 WORKDIR /usr/src/app
