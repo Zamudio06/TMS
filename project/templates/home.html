@@ -1,0 +1,21 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block styles %}
+<style>
+    .custom-home-title {
+        color: #2c3e50;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="custom-home-title mt-4">Welcome to the TMS {{ request.user.get_full_name }}!</h1>
+        <p>This is the main content of the Task Management System.</p>
+    </div>
+{% endblock %}
