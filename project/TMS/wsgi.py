@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'TMS.production-settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.TMS.production-settings')
 
 application = get_wsgi_application()
