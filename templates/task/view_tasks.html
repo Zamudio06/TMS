@@ -12,6 +12,7 @@
             <th>Title</th>
             <th>Email</th>
             <th>Description</th>
+            <th>Expiration Date</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -76,6 +77,7 @@
                         <td>${task.title}</td>
                         <td>${task.email}</td>
                         <td>${task.description}</td>
+                        <td>${task.expiration_date}</td>
                         <td>
                             <button class="btn btn-warning edit-task" data-id="${task.id}">Edit</button>
                             <button class="btn btn-danger delete-task" data-id="${task.id}">Delete</button>
