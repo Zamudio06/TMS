@@ -31,8 +31,6 @@ services:
 
   db:
     image: postgres:latest
-    env_file:
-      - .env
     environment:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
@@ -82,3 +80,6 @@ services:
       - ./nginx/default.conf:/etc/nginx/nginx.conf
     depends_on:
       - web
+
+volumes:
+  postgres_data:
