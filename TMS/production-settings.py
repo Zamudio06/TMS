@@ -31,8 +31,6 @@ ALLOWED_HOSTS = ['*']
 
 LOGIN_URL = '/accounts/login'
 
-FORCE_SCRIPT_NAME = "/TMS/"
-
 
 # Application definition
 
